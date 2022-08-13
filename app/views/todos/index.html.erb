@@ -5,7 +5,7 @@
 <%= render "form", todo: Todo.new %>
 
 <div id="todos">
-  <% @todos.each do |todo| %>
+  <% @todos.reverse.each do |todo| %>
     <%= render todo %>
   <% end %>
 </div>
